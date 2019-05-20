@@ -1,0 +1,18 @@
+{
+  "name": "auto-gsnetguest",
+  "version": "0.1.0",
+  "description": "A small cli to log into gsnetguest.",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Bruno \"Storm\" Brant",
+  "license": "MIT",
+  "bin": {
+    "gsnetguest": "index.js"
+  },
+  "dependencies": {
+    "zombie": "^6.1.4"
+  }
+}
