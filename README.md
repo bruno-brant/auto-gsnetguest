@@ -44,9 +44,9 @@ Save it as login.sh and flag it for execution:
 chmod +x login.sh
 ```
 
-*Important* 
 
-You'll be saving your password in a file, which is not recommended. Do so at your own risk!
+> **Important** 
+> You'll be saving your password in a file, which is not recommended. Do so at your own risk!
 
 
 
