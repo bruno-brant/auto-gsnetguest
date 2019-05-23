@@ -26,8 +26,6 @@ async function main() {
 		process.exit(1);
 	}
 
-	console.log(`${username}/${password}`);
-
 	try {
 		// go the connect website
 		await browser.visit("http://msftconnecttest.com/");
@@ -37,6 +35,13 @@ async function main() {
 		browser.fill("user.password", password);
 		browser.document.forms[0].submit();
 		await browser.wait();
+
+		const loginFailed = await browser.text("#ui_login_failed_error");
+
+		if (loginFailed == "Authentication failed.") {
+			console.error("Login error. Double check your credentials.");
+			process.exit(1);
+		}
 
 		// confirm to connect
 		browser.document.forms[0].submit();

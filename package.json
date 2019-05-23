@@ -1,9 +1,9 @@
 {
   "name": "auto-gsnetguest",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A small cli to log into gsnetguest.",
   "main": "index.js",
-  "repository": "",
+  "repository": "git+https://github.com/bruno-brant/auto-gsnetguest",
   "scripts": {
     "test": "npm test"
   },
