@@ -1,9 +1,9 @@
 # auto-gsnetguest
 A small CLI to log into gsnetguest.
 
-I hate repetitive tasks. I'm a software writer, after all! So, having to repeat login steps everyday is a pain, so `auto-gsnetguest` can help anyone to just login into a Wi-fi Network called GSNETGUEST. This wifi network has one of those pesky login pages where you have to type your username and password after connecting to it and click not one, but two buttons so you can enter the network. 
+I hate repetitive tasks. I'm a software writer, after all! So, having to repeat login steps everyday is a pain, and that's why `auto-gsnetguest` will help anyone to just login into a Wi-fi Network called GSNETGUEST (this Wi-Fi Network has one of those pesky login pages where you have to type your username and password after connecting to it and click not one, but two buttons so you can enter the network!).
 
-So, read the steps bellow and soon you'll be logging in with just a click.
+Read the steps bellow and soon you'll be logging in with just a click.
 
 # Installation
 
