@@ -29,6 +29,12 @@ To avoid having to always type your username and password, you can create a simp
 
 On Windows, open notepad and type the same command above on it. Save it as "login.cmd" (type the quotation marks so that notepad will save it with the correct file extension) on a folder with easy access -- for instance, the Desktop.
 
+❕ On Windows you can also use the command line to connect to a wifi network, making it even simple if Windows ins't connecting automatically.
+
+```
+netsh wlan connect name=GSNETGUEST
+```
+
 ## Create a bash script on a *nix based system (Mac, Linux, etc.)
 
 Just open your favorite editor (i.e. vim) and then type the shabang followed by the command, as below:
