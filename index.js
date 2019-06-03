@@ -12,6 +12,13 @@ function usage() {
 	console.log("\nYou must be connected to the network before running this command.");
 }
 
+function isConnected(browser) {
+	const html = browser.document.body.outerHTML;
+	return html.includes("<a href=\"connecttest.txt\">connecttest.txt</a>")
+		&& html.includes("<a href=\"ncsi.txt\">");
+
+}
+
 async function main() {
 	if (process.argv.length < 2) {
 		usage();
@@ -29,6 +36,11 @@ async function main() {
 	try {
 		// go the connect website
 		await browser.visit("http://msftconnecttest.com/");
+
+		if (isConnected(browser)) {
+			console.log("Already connected.");
+			process.exit(0);
+		}
 
 		// fill user and pass
 		browser.fill("user.username", username);
